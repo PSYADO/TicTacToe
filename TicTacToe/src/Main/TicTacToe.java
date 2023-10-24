@@ -123,8 +123,112 @@ public class TicTacToe
                     c=c+1;
 
                     if(co%2==0)
+                        
                         ar[in-1]='X';
                     else
                         ar[in-1]='O';
                     ++co;
                     }
+                                        {
+                        if((ar[1]=='X'&&ar[2]=='X')||(ar[3]=='X'&&ar[6]=='X')||(ar[4]=='X'&&ar[8]=='X'))
+                        {
+
+                            a=0;
+                        }
+                    }
+                    if(ar[1]=='X'&&ar[4]=='X'&&ar[7]=='X')
+                    {
+
+                        a=0;
+                    }
+                    if(ar[2]=='X')
+                    {
+                        if((ar[4]=='X'&&ar[6]=='X')||(ar[5]=='X'&&ar[8]=='X'))
+                        {
+
+                            a=0;
+                        }
+                    }
+                    if(ar[3]=='X'&&ar[4]=='X'&&ar[5]=='X')
+                    {
+
+                        a=0;
+                    }
+                    if(ar[6]=='X'&&ar[7]=='X'&&ar[8]=='X')
+                    {
+
+                        a=0;
+                    }
+
+                    if(ar[0]=='O')
+                    {
+                        if((ar[1]=='O'&&ar[2]=='O')||(ar[3]=='O'&&ar[6]=='O')||(ar[4]=='O'&&ar[8]=='O'))
+                        {
+
+                            a=2;
+                        }
+                    }
+                    if(ar[1]=='O'&&ar[4]=='O'&&ar[7]=='O')
+                    {
+
+                        a=2;
+                    }
+                    if(ar[2]=='O')
+                    {
+                        if((ar[4]=='O'&&ar[6]=='O')||(ar[5]=='O'&&ar[8]=='O'))
+                        {
+
+                            a=2;
+                        }
+                    }
+                    if(ar[3]=='O'&&ar[4]=='O'&&ar[5]=='O')
+                    {
+
+                        a=2;
+                    }
+                    if(ar[6]=='O'&&ar[7]=='O'&ar[8]=='O')
+                    {
+
+                        a=2;
+                    }
+
+                }while(true);
+                System.out.println("\nEnter 1 to Continue \n\nEnter 0 to quit");
+                k=sc.nextInt();
+            }
+            System.out.println('\u000c');
+            System.exit(0);
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error");
+        }
+
+    }
+
+    boolean print(@NotNull String input)
+    {
+        int x=input.length();
+
+        System.out.println("\n\n\t\t\t");
+        for(int j=0;j<x;j++)
+        {
+            char c=input.charAt(j);
+
+            for(double i=0.0;i<=10000000.0;i+=0.1)
+
+                for(double i1=0.0;i<=10000000.0;i+=0.1)
+
+                    for(double i2=0.0;i<=10000000.0;i+=0.1)
+
+                        for(double i3=0.0;i<=10000000.0;i+=0.1)
+
+                            for(double i4=0.0;i<=10000000.0;i+=0.1)
+
+                                for(double i5=0.0;i<=10000000.0;i+=0.1){}
+            System.out.print(c);
+        }
+        System.out.println();
+        return true;
+    }
+}
