@@ -1,7 +1,5 @@
 
 package Main;
-
-
 import java.util.Scanner;
 public class TicTacToe
 {
@@ -128,7 +126,8 @@ public class TicTacToe
                     else
                         ar[in-1]='O';
                     ++co;
-                    }
+                     if(ar[0]=='X')
+                    {
                                         {
                         if((ar[1]=='X'&&ar[2]=='X')||(ar[3]=='X'&&ar[6]=='X')||(ar[4]=='X'&&ar[8]=='X'))
                         {
